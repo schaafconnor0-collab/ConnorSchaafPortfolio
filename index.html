@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Connor Schaaf | Game Scripter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="backdrop"></div>
+  <div class="grain"></div>
+
+  <div class="frame">
+    <div class="container">
+
+      <header class="nav">
+        <div class="brand">
+          Connor Schaaf <span class="role">Game Scripter</span>
+        </div>
+        <nav class="navlinks">
+          <a href="index.html" class="active">Games</a>
+          <a href="about.html">Get to Know Me</a>
+          <a href="side-projects.html">Side Projects</a>
+        </nav>
+      </header>
+
+      <section class="pagehead">
+        <h1>Selected Work</h1>
+        <p>Hover for a preview, click to learn more about the project!</p>
+      </section>
+
+      <section class="grid">
+
+        <a class="tile featured" href="mags-n-magic.html">
+          <div class="tile-image" style="background-image:url('assets/images/mags-n-magic.png')"></div>
+          <div class="ribbon featured">Featured</div>
+
+          <div class="overlay">
+            <div class="engine">Unreal Engine 5</div>
+            <div class="title">Mags & Magic</div>
+            <div class="rule"></div>
+            <p class="desc">
+              Multiplayer hero based first person shooter free for all with shop upgrades.
+            </p>
+            <div class="cta">View Project</div>
+          </div>
+        </a>
+
+        <div class="tile empty">
+          <div class="tile-image" style="background-image:url('assets/images/coming-soon-1.png')"></div>
+          <div class="ribbon">Coming Soon</div>
+          <div class="emptyCenter">
+            <div class="emptyCard">
+              <div class="kicker">Next Project</div>
+              <div class="big">Coming Soon</div>
+              <div class="small">Will be filled with a project in the future</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile empty">
+          <div class="tile-image" style="background-image:url('assets/images/coming-soon-2.png')"></div>
+          <div class="ribbon">Coming Soon</div>
+          <div class="emptyCenter">
+            <div class="emptyCard">
+              <div class="kicker">Reserved</div>
+              <div class="big">Coming Soon</div>
+              <div class="small">Will be filled with a project in the future</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile empty">
+          <div class="tile-image" style="background-image:url('assets/images/coming-soon-3.png')"></div>
+          <div class="ribbon">Coming Soon</div>
+          <div class="emptyCenter">
+            <div class="emptyCard">
+              <div class="kicker">Reserved</div>
+              <div class="big">Coming Soon</div>
+              <div class="small">Will be filled with a project in the future</div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <footer class="footer">
+        © <span id="year"></span> Connor Schaaf
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

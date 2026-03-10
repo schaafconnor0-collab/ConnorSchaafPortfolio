@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Get to Know Me | Connor Schaaf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="backdrop"></div>
+  <div class="grain"></div>
+
+  <div class="frame">
+    <div class="container">
+
+      <header class="nav">
+        <div class="brand">
+          Connor Schaaf <span class="role">Game Scripter</span>
+        </div>
+        <nav class="navlinks">
+          <a href="index.html">Games</a>
+          <a href="about.html" class="active">Get to Know Me</a>
+          <a href="side-projects.html">Side Projects</a>
+        </nav>
+      </header>
+
+      <section class="pagehead">
+        <h1>Get to Know Me</h1>
+        <p>My Background and Resume</p>
+      </section>
+
+      <section class="section">
+        <div class="sectionBody">
+          <div class="aboutWrap">
+            <div class="headshot">
+              <img src="assets/images/headshot.png" alt="Connor Schaaf">
+            </div>
+
+            <div>
+              <p class="bodyText">
+                I am a game development and design student at Purdue University. I am an aspiring programmer and scripter that has significant experience in Unreal Engine as well as moderate experience in C#, C++, and Python. My goal is to keep learning what I can about different mainstream programming languages as well as perfecting my craft in the likes of Unreal Engine. I have the most experience in making first person shooters and simulation games, but am always up for the challenge of attempting to make a game in a genre I have not explored.
+              </p>
+
+              <div class="ctaRow">
+                <a class="button" href="assets/resume/ConnorSchaafResume.pdf" download>
+                  Download Resume
+                </a>
+                <a class="button secondary" href="index.html">
+                  Back to Games
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        © <span id="year"></span> Connor Schaaf
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
