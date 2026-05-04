@@ -850,4 +850,15 @@
     color: rgba(243,243,243,.42);
     font-size: 12px;
   }
+
+  .videoFrame iframe{
+  width:100%;
+  aspect-ratio:16 / 9;
+  display:block;
+  border:0;
+}
+
+.youtubeFrame{
+  line-height:0;
+}
   
