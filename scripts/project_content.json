@@ -1,0 +1,256 @@
+{
+  "locomotion": {
+    "overview": "Locomotion is a party racer created with the viral qualities seen in other games in mind.",
+    "overview_paragraphs": [
+      "Locomotion is a party racer created with the viral qualities seen in other games in mind. Players join four-person lobbies with friends or other people online, then race around a track and receive items that serve one of two purposes.",
+      "Normal items, such as Nitro Sneakers, give the player a speed boost. Obstacle items, such as the Pop-Up Pillar, stay on the map for the rest of the race. The pillar launches players into the air when they pass over it, but mistiming it can stop them completely. This creates a crazy dynamic: every later lap has another permanent obstacle to deal with.",
+      "The game is intended to create chaos while also giving players interesting layers of strategy to consider as they play."
+    ],
+    "role": "Technical Game Designer and Backend Programmer",
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "Multiplayer systems, Unreal Blueprints, design documentation"
+      },
+      {
+        "label": "Engine",
+        "value": "Unreal Engine"
+      },
+      {
+        "label": "Team",
+        "value": "6 people"
+      },
+      {
+        "label": "Status",
+        "value": "Alpha Development Stage"
+      }
+    ],
+    "contributions": [
+      "Created the entire multiplayer system from scratch and integrated it with our other programmers’ systems so everything replicates between the server and clients.",
+      "Wrote the game design document, which the team uses as an important reference for our design approach.",
+      "Worked on preliminary UI and race systems, including starting and stopping races, counting laps and checkpoints, and respawning players who fall off the map."
+    ],
+    "sections": [
+      {
+        "id": "multiplayer",
+        "title": "Multiplayer and lobby flow",
+        "paragraphs": [
+          "My main focus on this project was creating the entire multiplayer system. I built it from scratch and fully integrated it with our other programmers’ systems so everything replicates between the server and clients.",
+          "Players start in their own main-menu map. Clicking ‘Join Game’ starts a search for an existing server. The system runs several checks to give the player the opportunity to join an existing lobby before creating a new server.",
+          "If a lobby is available, the player joins it. Otherwise, the game creates a new server and brings the player to a lobby screen showing that they are waiting for more players. A countdown begins when the lobby reaches the minimum of two players. More players can join during the countdown, up to a maximum of four. If the lobby reaches four players, the game starts before the countdown ends.",
+          "When the countdown ends, or the lobby fills, the players move together into the game-session map. They see a loading screen until everyone has fully loaded, and then the race begins."
+        ]
+      },
+      {
+        "id": "hud",
+        "title": "HUD and UI",
+        "paragraphs": [
+          "I have done significant work on the HUD and UI, though it is all still at the prototype stage. The main-menu and lobby interfaces include basic widget animations that give the game a professional touch, even while the designs are still prototypes.",
+          "The in-game UI uses designs from our artists, with 3D assets creating a 2D look. Once these assets are complete, they will help achieve the retro style we are aiming for. During a race, players can see their position relative to other players, their current item, and the lap time.",
+          "Currently, a race lasts two minutes, and players score points for each checkpoint they reach. Our only playable map has eight checkpoints per lap, so each completed lap earns eight points. The player with the most points at the end wins. After the race, players see the final leaderboard and can return to the main menu."
+        ]
+      },
+      {
+        "id": "documentation",
+        "title": "Game design documentation",
+        "paragraphs": [
+          "I also created the game design document for our project. The team uses it as an important reference for our design approach."
+        ]
+      }
+    ],
+    "credits": null
+  },
+  "project-hope": {
+    "overview": "Project: Hope is a student-led adventure game developed in tandem with the Ukraine Volya Foundation. It introduces coping techniques through stories and gentle exploration, gamifying mental health for children who have experienced major traumatic events.",
+    "role": "Technical Game Designer and Project Manager",
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "Game design and technical documentation"
+      },
+      {
+        "label": "Engine",
+        "value": "Unity"
+      },
+      {
+        "label": "Status",
+        "value": "Early Production Stage / First Playable"
+      }
+    ],
+    "contributions": [
+      "Documented the hub, story progression, and player activities.",
+      "Defined assistance for players who get stuck, without a penalty for using it.",
+      "Separated optional challenges from activities needed to progress.",
+      "Wrote the technical requirements and performance proposal."
+    ],
+    "sections": [
+      {
+        "id": "loop",
+        "title": "Story progression",
+        "paragraphs": [
+          "Players choose a book in a bedroom hub to enter a story. They explore with a friendly character, complete an activity, and return home. The hub gives each story a familiar starting and ending point.",
+          "Puzzles that move the story forward are separate from guided learning scenes. Each activity is designed around what it asks of the player and whether it could prevent them from reaching the rest of the story."
+        ]
+      },
+      {
+        "id": "assistance",
+        "title": "Helping a stuck player",
+        "paragraphs": [
+          "For simple tasks such as finding ingredients, the planned assistance starts with a hint and can progress to highlighting the objects needed. Using help carries no penalty. Optional puzzles provide room for more challenge without blocking the main story."
+        ]
+      },
+      {
+        "id": "technical",
+        "title": "Planning for modest hardware",
+        "paragraphs": [
+          "The technical requirements cover modest hardware and rendering scope, with 720p at 30 fps as an initial planning target. Device support is refined through testing. The game is designed for offline play."
+        ]
+      }
+    ],
+    "credits": null
+  },
+  "mags-n-magic": {
+    "overview": "Mags & Magic is a multiplayer hero shooter made as a team project in Unreal Engine. I worked on the four-player lobby system, the Vampire and selected Fairy abilities, and the leaderboard shared across the players’ screens.",
+    "role": "Gameplay and multiplayer scripting",
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "Blueprint abilities and multiplayer systems"
+      },
+      {
+        "label": "Engine",
+        "value": "Unreal Engine 5"
+      },
+      {
+        "label": "Team",
+        "value": "5"
+      }
+    ],
+    "contributions": [
+      "Worked on four-player lobby flow and connection-error handling.",
+      "Implemented the Vampire’s abilities and passive health regeneration.",
+      "Implemented the Fairy’s flight and Magic Charm.",
+      "Connected player names and kill counts to the leaderboard and bounty system."
+    ],
+    "sections": [
+      {
+        "id": "abilities",
+        "title": "Vampire and Fairy abilities",
+        "paragraphs": [
+          "I implemented the Vampire’s dash, which trades health for a speed boost, and Dark Whisper, which pulls another player toward the user. The pull uses a different cooldown depending on whether it connects. The Vampire also regenerates health after a period without taking damage.",
+          "For the Fairy, I implemented flight and Magic Charm, a projectile that resets enemy ability cooldowns. My Blueprint work connected these abilities to player input, movement, cooldowns, and the affected character. The gameplay video shows these features alongside the rest of the team’s hero work."
+        ]
+      },
+      {
+        "id": "multiplayer",
+        "title": "Multiplayer flow",
+        "paragraphs": [
+          "My main responsibility was getting four players into a lobby and able to interact in the same game. I worked on connection handling and recovery from errors, as well as allowing more than one lobby to be active.",
+          "This work sat alongside the character abilities: joining a match, controlling the correct character, and showing changes to the other players all had to work together."
+        ]
+      },
+      {
+        "id": "leaderboard",
+        "title": "Leaderboard and bounties",
+        "paragraphs": [
+          "I built the player-name and kill-tracking features used by the shared leaderboard. The bounty system also used that information to identify players on streaks. The recorded match shows four named players, their kill counts, and the current bounty during gameplay."
+        ]
+      }
+    ],
+    "credits": null
+  },
+  "trials-of-the-arcane-academy": {
+    "overview": "The Trials of the Arcane Academy is a fantasy RPG about learning spells and uncovering a conspiracy at a magical school. I extended a supplied RPG template with project-specific trials, encounter behavior, and branching narrative design.",
+    "role": "Gameplay design and Blueprint integration",
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "Blueprint integration and narrative design"
+      },
+      {
+        "label": "Engine",
+        "value": "Unreal Engine 5"
+      },
+      {
+        "label": "Foundation",
+        "value": "Provided turn-based RPG template"
+      },
+      {
+        "label": "Team",
+        "value": "Solo Project"
+      }
+    ],
+    "contributions": [
+      "Connected pre-combat trials to the existing mission system through Blueprints.",
+      "Designed the progression from spell lessons to puzzles and boss encounters.",
+      "Directed the story branches and specified the dialogue data format.",
+      "Worked on enemy setup through Blueprint children and exposed gameplay stats."
+    ],
+    "sections": [
+      {
+        "id": "progression",
+        "title": "Spells and trials",
+        "paragraphs": [
+          "I planned each new spell around a challenge that gives the player a reason to use it. The progression moves from a lesson to a pre-combat trial and then a boss encounter. The design pairs spell effects with particular problems, such as interrupting an enemy turn or dealing with an evasive opponent.",
+          "I kept the template’s mission foundation where it suited the game and connected my pre-combat trial tool to it through Blueprints."
+        ]
+      },
+      {
+        "id": "blueprints",
+        "title": "Enemy setup",
+        "paragraphs": [
+          "I worked with Blueprint children of the enemy classes to assign skeletal meshes and configure exposed stats. The C++ base provides combat-result events that Blueprints can use for feedback. This let me work on the game-specific setup while using the shared enemy foundation."
+        ]
+      },
+      {
+        "id": "dialogue",
+        "title": "Branching dialogue",
+        "paragraphs": [
+          "I directed the story around the player’s relationship with Headmaster Veritas and the rebellion. The dialogue specification tracks alignment toward two possible outcomes while bringing scenes back to the main progression.",
+          "I specified conversation identifiers, response naming, and the order of player and character replies for the dialogue CSV. During revision, I corrected added plot details that conflicted with my story document and pushed for fuller, more natural conversations."
+        ]
+      }
+    ],
+    "credits": "The original template included combat, dialogue, and mission tools. I overhauled most systems, including dialogue, combat, and progression, while building on that foundation. Environment assets are external."
+  },
+  "map-maker": {
+    "overview": "Backfield Map Maker is a browser tool for planning levels on a scaled grid. I defined the workflow, tested the tool, and directed changes to make larger maps and exported sheets easier to use.",
+    "role": "Tool concept, requirements, and iteration",
+    "facts": [
+      {
+        "label": "Implementation",
+        "value": "AI-assisted React and TypeScript"
+      },
+      {
+        "label": "Runs in",
+        "value": "Web browser"
+      },
+      {
+        "label": "Data",
+        "value": "Local storage and file export"
+      }
+    ],
+    "contributions": [
+      "Specified grid scale, painting, legends, and map exports.",
+      "Tested large-map controls and requested zoom and layout fixes.",
+      "Directed a local questionnaire-based map generator."
+    ],
+    "sections": [
+      {
+        "id": "workflow",
+        "title": "The workflow",
+        "paragraphs": [
+          "My brief covers Unreal, metric, and imperial sizing; cell and region painting; a linked legend; and exports with a title and scale. The demo can save an editable map file or export a PNG."
+        ]
+      },
+      {
+        "id": "iteration",
+        "title": "Changes after testing",
+        "paragraphs": [
+          "Larger maps pushed controls out of reach, so I requested zoom and scroll changes. I also chose a local questionnaire for generating layouts instead of an external AI connection, allowing the tool to work offline."
+        ]
+      }
+    ],
+    "credits": "I contributed the concept, specification, testing, and iteration. The implementation was AI-assisted."
+  }
+}
